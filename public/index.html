@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Unity WebGL Player | Quiz</title>
+  <style>
+    body {
+      margin: 0 !important;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    #unityContainer {
+      position: relative;
+      display: block;
+      width: 100vw;
+      height: 56.25vw;
+      margin: auto;
+      left: 0%;
+      right: 0%;
+    }
+
+    @media screen and (min-aspect-ratio: 16/9) {
+      #unityContainer {
+        height: 100vh;
+        width: 177.78vh;
+      }
+    }
+  </style>
+  <script src="Build/UnityLoader.js"></script>
+  <script>
+    UnityLoader.instantiate("unityContainer", "Build/New folder (3).json");
+  </script>
+</head>
+
+<body>
+  <div id="unityContainer"></div>
+</body>
+
+</html>
