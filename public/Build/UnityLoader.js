@@ -2004,10 +2004,13 @@ var UnityLoader = UnityLoader || {
             case "iOS":
                 p = /OS (\d+)_(\d+)_?(\d+)?/.exec(o), p = p[1] + "." + p[2] + "." + (0 | p[3])
         }
-        var ratio = window.devicePixelRatio || 1;
+        //var ratio = window.devicePixelRatio || 1;
+        //console.log(ratio);
         return {
-            width: screen.width ? screen.width * ratio: 0,
-            height: screen.height ? screen.height * ratio: 0,
+            //width: screen.width ? screen.width * ratio: 0,
+            //height: screen.height ? screen.height * ratio: 0,
+            width: 1920,
+            height: 1080,
             browser: a,
             browserVersion: s,
             mobile: l,
