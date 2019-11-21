@@ -2229,7 +2229,7 @@ var UnityLoader = UnityLoader || {
             if ("string" == typeof e && !(e = document.getElementById(e))) return !1;
             e.innerHTML = "", e.style.border = e.style.margin = e.style.padding = 0, "static" == getComputedStyle(e).getPropertyValue("position") && (e.style.position = "relative"), e.style.width = n.width || e.style.width, e.style.height = n.height || e.style.height, n.container = e;
             var o = n.Module;
-            o.canvas = document.createElement("canvas"), o.canvas.style.width = "100%", o.canvas.style.height = "100%", o.canvas.addEventListener("contextmenu", function(e) {
+            o.canvas = document.createElement("canvas"), o.canvas.width=1920, o.canvas.height=1080,o.canvas.style.width = "100%", o.canvas.style.height = "100%", o.canvas.addEventListener("contextmenu", function(e) {
                 e.preventDefault()
             }), o.canvas.id = "#canvas", e.appendChild(o.canvas), o.deinitializers.push(function() {
                 e.removeChild(o.canvas)
